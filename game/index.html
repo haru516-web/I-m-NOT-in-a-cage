@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ja"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover,user-scalable=no"><meta name="theme-color" content="#101915"><title>I'm (NOT) in a cage — 森の旅</title>
+<link rel="stylesheet" href="style.css">
+<script type="importmap">{"imports":{"three":"./vendor/three.module.js","three/addons/utils/BufferGeometryUtils.js":"./vendor/BufferGeometryUtils.js"}}</script>
+<main id="game"><div id="world"></div><div class="focus"><i></i><span>+</span></div>
+<button id="menu" aria-label="メニュー">☰</button>
+<div class="stick left" id="move" role="group" aria-label="移動スティック：上半分で前進、下半分で後退"><b class="up">▴</b><b class="down">▾</b><b class="west">◂</b><b class="east">▸</b><div class="knob"></div></div>
+<div class="stick right" id="look" role="group" aria-label="視点スティック"><b class="up">▴</b><b class="down">▾</b><b class="west">◂</b><b class="east">▸</b><div class="knob"></div></div>
+<div id="caption">森を読み込んでいます…</div>
+<dialog id="panel"><p class="eyebrow">I'M (NOT) IN A CAGE</p><h1>森の旅</h1><p>左スティックの上半分で進む、下半分で戻る。<br>右スティックで、ゆっくり見回す。</p><p class="muted">キーボード：W / S で移動・矢印キーで視点操作</p><button id="resume">旅を続ける</button><button id="fullscreen">全画面にする</button><button id="reset">出発地点へ戻る</button></dialog>
+<div id="portrait"><span>↻</span><p>端末を横向きにしてください</p></div></main>
+<script type="module" src="main.js"></script></html>
